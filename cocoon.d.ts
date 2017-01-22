@@ -1,3 +1,8 @@
+interface Navigator {
+    /** Returns true if you are using CocoonJS. */
+    isCocoonJS: boolean
+}
+
 declare module Cocoon {
 
     export module Store {
@@ -58,7 +63,7 @@ declare module Cocoon {
             NON_RENEWABLE_SUBSCRIPTION
         }
 
-        export enum object {
+        export enum Object {
             APP_STORE,  // Apple AppStore./
             PLAY_STORE,  // Android Play Store.
             MOCK_STORE,  // Mock Store (Used for testing).
@@ -263,6 +268,7 @@ declare module Cocoon {
 
         export function confirm(params: any, callback?: any);
         export function prompt(params: any, callback?: any);
+        export function showKeyboard(params: any, callback?: any);
     }
 
     export module Device {
@@ -329,4 +335,11 @@ declare module Cocoon {
         }
     }
 
+    export module Widget {
+        export class WebDialog {
+            close();
+            eval();
+            show(url: string, closeCallback: Function)
+        }
+    }
 }
