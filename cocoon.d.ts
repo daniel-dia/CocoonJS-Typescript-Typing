@@ -63,7 +63,7 @@ declare module Cocoon {
             NON_RENEWABLE_SUBSCRIPTION
         }
 
-        export enum object {
+        export enum Object {
             APP_STORE,  // Apple AppStore./
             PLAY_STORE,  // Android Play Store.
             MOCK_STORE,  // Mock Store (Used for testing).
@@ -339,7 +339,7 @@ declare module Cocoon {
         export class WebDialog {
             close();
             eval();
-            show(url:string, closeCallback:Function)
+            show(url: string, closeCallback: Function)
         }
     }
 }
