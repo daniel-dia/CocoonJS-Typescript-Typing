@@ -295,8 +295,7 @@ declare module Cocoon {
         function exitCallback(callback: () => boolean);
         function forward(code: string);
         function forwardAsync(code: string, callback: () => void)
-
-                                         function hideTheWebView()
+        function hideTheWebView()
         function load(path: string, storageType: STORAGETYPE)
         function loadInTheWebView(path: string, callback: any, storageType: STORAGETYPE)
         function openURL(url: string)
