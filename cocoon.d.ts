@@ -1,7 +1,6 @@
 interface Navigator {
     /** Returns true if you are using CocoonJS. */
     isCocoonJS: boolean;
-    splashscreen: any; // needs interface
 }
 
 declare module Cocoon {
