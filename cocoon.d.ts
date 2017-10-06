@@ -1,6 +1,6 @@
 interface Navigator {
     /** Returns true if you are using CocoonJS. */
-    isCocoonJS: boolean
+    isCocoonJS: boolean;
 }
 
 declare module Cocoon {
@@ -269,6 +269,7 @@ declare module Cocoon {
         export function confirm(params: any, callback?: any);
         export function prompt(params: any, callback?: any);
         export function showKeyboard(params: any, callback?: any);
+        export function dismissKeyboard();
     }
 
     export module Device {
